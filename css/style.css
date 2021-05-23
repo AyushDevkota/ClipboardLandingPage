@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-small {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.container-big {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-btm {
+  margin-bottom: 5em;
+}
+
+h1, h3 {
+  margin-bottom: 0.25em;
+  color: #4d4d4d;
+}
+
+p {
+  font-size: 13px;
+  margin-bottom: 1em;
+  color: #999999;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.btn a {
+  color: #fff;
+  border-radius: 10em;
+  padding: 0.75em 2em;
+}
+
+.cyan-btn {
+  background-color: #26baa4;
+}
+
+.cyan-btn:hover {
+  background-color: #3cd7c0;
+}
+
+.blue-btn {
+  background-color: #6173ff;
+}
+
+.blue-btn:hover {
+  background-color: #94a0ff;
+}
+
+li {
+  list-style-type: none;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Bai Jamjuree', sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+header .img-container {
+  width: 100%;
+  background: url("../images/bg-header-desktop.png");
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  width: 8%;
+  margin: 5em auto 3em;
+}
+
+header .container-small h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+header .container-small p {
+  font-weight: 400;
+}
+
+section h3 {
+  font-size: 25px;
+}
+
+.img-area__img {
+  width: 50%;
+  position: relative;
+  left: -20px;
+  margin-right: 5em;
+}
+
+.img-area__text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+}
+
+.img-area__title {
+  color: #4d4d4d;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.img-area__info {
+  line-height: 2;
+}
+
+.img-area__info:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.tablet .img-placer {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.tablet img {
+  width: 100%;
+}
+
+.item {
+  width: 33.33%;
+}
+
+.item h3 {
+  font-size: 18px;
+}
+
+.item img {
+  height: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.item + .item {
+  margin-left: 1em;
+}
+
+.social-icons {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-icons img {
+  height: 2em;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  padding: 2em 0;
+}
+
+.footer .d-flex {
+  gap: 5em;
+}
+
+.footer .img-holder {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-logo {
+  height: 2.5em;
+}
+
+.footer .links {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+.footer .links ul {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.footer .links a {
+  color: #666666;
+  margin-right: 5em;
+}
+
+.footer .links a:hover {
+  color: #26baa4;
+}
+
+.footer .social-links {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  gap: 1em;
+}
+/*# sourceMappingURL=style.css.map */

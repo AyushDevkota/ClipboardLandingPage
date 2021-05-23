@@ -1,0 +1,131 @@
+@import './config';
+
+body {
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: $background-color;
+    line-height: 1.6;
+}
+header {
+    .img-container {
+        width: 100%;
+        background: url('../images/bg-header-desktop.png');
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        width: 8%;
+        margin: 5em auto 3em;
+    }
+    .container-small {
+        h1 {
+            font-size: 30px;
+            font-weight: weight('bold');
+        }
+        p {
+            font-weight: weight('light');
+        }
+    }
+}
+
+section {
+    h3 {
+        font-size: 25px;
+    }
+}
+
+.img-area {
+    &__img {
+        width: 50%;
+        position: relative;
+        left: -20px;
+        margin-right: 5em;
+    }
+    &__text {
+        justify-content: center;
+        width: 30%;
+    }
+    &__title {
+        color: $heading-text-color;
+        font-weight: weight('bold');
+        margin-bottom: 0.5em;
+    }
+    &__info {
+        line-height: 2;
+
+        &:nth-child(6) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.tablet {
+    .img-placer {
+        width: 60%;
+        margin: 0 auto;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.item {
+    width: 33.33%;
+    h3 {
+        font-size: 18px;
+    }
+    img {
+        height: 1.5em;
+        margin-bottom: 0.75em;
+    }
+    & + & {
+        margin-left: 1em;
+    }
+}
+
+.social-icons {
+    justify-content: space-between;
+    img {
+        height: 2em;
+    }
+}
+
+.footer {
+    background-color: hsl(0, 0%, 94%);
+    padding: 2em 0;
+    .d-flex {
+        gap: 5em;
+    }
+    .img-holder {
+        flex-basis: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+    &-logo {
+        height: 2.5em;
+    }
+    .links {
+        justify-self: center;
+        flex-basis: 75%;
+        ul {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        a {
+            color: hsl(0, 0%, 40%);
+            margin-right: 5em;
+            &:hover {
+                color: $primary-strong-cyan;
+            }
+        }
+    } 
+    .social-links {
+        justify-self: center;
+        align-self: center;
+        flex-basis: 15%;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        gap: 1em;
+    }
+}
