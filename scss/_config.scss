@@ -31,7 +31,8 @@ $font-weight: (
 }
 
 .container-small {
-    width: 40%;
+    min-width: 40%;
+    max-width: 50%;
     margin: 0 auto;
 }
 
@@ -71,6 +72,7 @@ a {
     justify-content: center;
     gap: 1em;
     margin-top: 2em;
+    // min-width: 300px;
 
     a {
         color: #fff;
